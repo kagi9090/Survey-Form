@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">
+       Kagi's Survey Form
+    </h1>
+
+    <p id="description">
+        Thank you for your participation in this survey form!
+    </p>
+
+    <form id="survey-form">
+        <div class="form-element">
+            <label for="name" id="name-label"><strong>Name:</strong></label><br>
+            <input  class="inputbox" type="text" id="name" name="name" required placeholder="Name"><br>
+        </div>
+        
+        <div class="form-element">
+            <label for="email" id=email-label><strong>email:</strong></label><br>
+            <input class="inputbox" type="email" id="email" name="email"  required placeholder="email address"><br>
+        </div>
+        
+        <div>
+            <label for="number" id="number-label"><strong>Age: </strong>(optional)</label><br>
+            <input class="inputbox" type="number" id="number"  name="number" min="0" max="100" placeholder="Age(optional)"><br>
+        </div>
+        
+        <div class="form-element">
+            <label for="phone-number" id="phone-number-label"><strong>Phone Number:</strong></label><br>
+            <input class="inputbox" type="number" id="phone-number" name="phone-number" placeholder="phone number" required><br>
+       </div>
+
+        <div class="form-element">
+            <label for="dropdown"><strong>What's your hobby?</strong></label><br>
+            <select class="inputbox" id="dropdown" name="dropdown" required>
+                <option disabled selected value>option</option>
+                <option>Coding</option>
+                <option>Coding</option>
+                <option>it is obviously coding right?? what else lol</option>
+            </select><br>
+        </div>
+       
+        <div class="form-element">
+        <p class="question"><strong>Do you like problem solving?</strong></p>
+            <label><input type="radio" id="yes-option" name="yes-or-no" value="Yes">Yes</label>
+            <label><input type="radio" id="no-option" name="yes-or-no" value="No">No</label><br>
+        </div>
+       
+        <div class="form-element">
+        <p class="question"><strong>Please choose something that you would like to be better at</strong></p>
+            <label><input type="checkbox" name="things-to-have" value="Cooking">Cooking food</label><br>
+            <label><input type="checkbox" name="things-to-have" value="valorant">Hitting heads at valorant</label><br>
+            <label><input type="checkbox" name="things-to-have" value="Driving">Driving</label><br>
+            <label><input type="checkbox" name="things-to-have" value="Communication">Communication skill</label><br>
+            <label><input type="checkbox" name="things-to-have" value="coding" required>Coding</label><br>
+        </div>
+       
+        <div class="form-element">
+            <label class="textarea" for="textarea"><strong>Do you have anything to say?</strong></label><br>
+            <textarea id="textarea" rows="3" cols="45" placeholder="Please put your opinion in the box about anything you want."></textarea>
+        </div>
+
+
+        <button form="survey-form" type="submit" id="submit" value="submit">submit</button>
+
+
+
+    </form>
+    <footer>
+     <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a>
+     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+</body>
+</html>
